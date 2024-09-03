@@ -1,8 +1,9 @@
+import "./Login.css";
+
 import axios from "axios";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
-import "./login.css";
 
 const Login = ({ handleToken }) => {
   const [email, setEmail] = useState("");
@@ -32,7 +33,8 @@ const Login = ({ handleToken }) => {
     <>
       <form className="signup-container" onSubmit={handleSubmit}>
         <h1>Se connecter</h1>
-        <input className="input-style"
+        <input
+          className="input-style"
           type="email"
           placeholder="email"
           value={email}
@@ -40,7 +42,8 @@ const Login = ({ handleToken }) => {
             setEmail(event.target.value);
           }}
         />
-        <input className="input-style"
+        <input
+          className="input-style"
           type="password"
           value={password}
           onChange={(event) => {
