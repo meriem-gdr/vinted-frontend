@@ -1,0 +1,118 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #fff;
+
+}
+
+.logo-container {
+  flex: 1;
+}
+
+.logo {
+  height: 40px;
+}
+
+.search-container {
+  flex: 3;
+  display: flex;
+  justify-content: center;
+}
+
+.search-input {
+  width: 100%;
+  max-width: 500px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  background-color: #f7f7f7;
+}
+
+.filters-container {
+  flex: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.label {
+  margin-right: 5px;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* SORT BUTTON */
+.sort-price,
+.price-range {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.sort-button {
+  background-color: #41b5a9;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* RANGE INPUT */
+
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+  width: 15rem;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  background: #41b5a9;
+  height: 0.5rem;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  margin-top: -4px; /* Centers thumb on the track */
+  background-color: #007782;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+}
+
+/* LEFT BUTTONS */
+
+.buttons-container {
+  flex: 2;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.outline-button {
+  padding: 10px 15px;
+  margin: 0 5px;
+  border: 1px solid #41b5a9;
+  border-radius: 5px;
+  background-color: transparent;
+  color: #41b5a9;
+  cursor: pointer;
+}
+
+.filled-button {
+  padding: 10px 15px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #41b5a9;
+  color: #fff;
+  cursor: pointer;
+}
